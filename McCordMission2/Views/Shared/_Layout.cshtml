@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" type="image/x-icon" href="img/konnor.JPG" />
+    <link href="~/js/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="grade_calculator">Calculate Your Grade</a>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        Yo welcome to the footer
+    </footer>
+
+    <script src="~/js/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/js/lib/jquery/jquery-3.6.0.min.js"></script>
+
+</body>
+
+</html>
